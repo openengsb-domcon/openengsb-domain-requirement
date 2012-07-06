@@ -15,23 +15,25 @@
  * limitations under the License.
  */
 
-package org.openengsb.domain.requirement;
+package org.openengsb.domain.requirement.events;
 
-import org.openengsb.core.api.DomainEvents;
-import org.openengsb.domain.requirement.events.RequirementChangedEvent;
-import org.openengsb.domain.requirement.events.RequirementCommentedEvent;
-import org.openengsb.domain.requirement.events.RequirementCreatedEvent;
-import org.openengsb.domain.requirement.events.RequirementDeletedEvent;
+import org.openengsb.core.api.Event;
 
-// @extract-start RequirementDomainEvents
-public interface RequirementDomainEvents extends DomainEvents {
+/**
+ * Created with IntelliJ IDEA.
+ * User: Peter
+ * Date: 06.07.12
+ * Time: 15:39
+ * To change this template use File | Settings | File Templates.
+ */
+public class RequirementDeletedEvent extends Event{
+    private String id;
 
-    String raiseRequirementCreatedEvent(RequirementCreatedEvent event);
+    public RequirementDeletedEvent(String id) {
+        this.id = id;
+    }
 
-    void raiseRequirementChangedEvent(RequirementChangedEvent event);
-
-    void raiseRequirementDeletedEvent(RequirementDeletedEvent event);
-
-    void raiseRequirementCommentedEvent(RequirementCommentedEvent event);
+    public String getId() {
+        return id;
+    }
 }
-// @extract-end

@@ -17,21 +17,21 @@
 
 package org.openengsb.domain.requirement;
 
-import org.openengsb.core.api.DomainEvents;
-import org.openengsb.domain.requirement.events.RequirementChangedEvent;
-import org.openengsb.domain.requirement.events.RequirementCommentedEvent;
-import org.openengsb.domain.requirement.events.RequirementCreatedEvent;
-import org.openengsb.domain.requirement.events.RequirementDeletedEvent;
+/**
+ * Created with IntelliJ IDEA.
+ * User: Peter
+ * Date: 06.07.12
+ * Time: 15:09
+ * To change this template use File | Settings | File Templates.
+ */
+public class Author {
+    private  String name;
 
-// @extract-start RequirementDomainEvents
-public interface RequirementDomainEvents extends DomainEvents {
+    public String getName() {
+        return name;
+    }
 
-    String raiseRequirementCreatedEvent(RequirementCreatedEvent event);
-
-    void raiseRequirementChangedEvent(RequirementChangedEvent event);
-
-    void raiseRequirementDeletedEvent(RequirementDeletedEvent event);
-
-    void raiseRequirementCommentedEvent(RequirementCommentedEvent event);
+    public void setName(String name) {
+        this.name = name;
+    }
 }
-// @extract-end

@@ -17,21 +17,9 @@
 
 package org.openengsb.domain.requirement;
 
-import org.openengsb.core.api.DomainEvents;
-import org.openengsb.domain.requirement.events.RequirementChangedEvent;
-import org.openengsb.domain.requirement.events.RequirementCommentedEvent;
-import org.openengsb.domain.requirement.events.RequirementCreatedEvent;
-import org.openengsb.domain.requirement.events.RequirementDeletedEvent;
-
-// @extract-start RequirementDomainEvents
-public interface RequirementDomainEvents extends DomainEvents {
-
-    String raiseRequirementCreatedEvent(RequirementCreatedEvent event);
-
-    void raiseRequirementChangedEvent(RequirementChangedEvent event);
-
-    void raiseRequirementDeletedEvent(RequirementDeletedEvent event);
-
-    void raiseRequirementCommentedEvent(RequirementCommentedEvent event);
+public enum Status implements RequirementAttribute {
+    NEW,
+    ASSIGNED,
+    APPROVED,
+    REJECTED
 }
-// @extract-end

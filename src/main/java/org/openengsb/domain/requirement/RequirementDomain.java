@@ -17,13 +17,32 @@
 
 package org.openengsb.domain.requirement;
 
-import java.util.List;
 import java.util.HashMap;
 
 import org.openengsb.core.api.Domain;
 
-// @extract-start RequirementDomain
+// @extract-start IssueDomain
 public interface RequirementDomain extends Domain {
 
+    /**
+     * get a list of requirements including the last updates and to whom they are assigned
+     */
+    void listRequirements(HashMap<String, ChangedContent> reports);
+
+    /**
+     * gets a requirement to be displayed for the user
+     */
+    void displayRequirement(Requirement requirement);
+
+    /**
+     * add a comment to a requirement, specified by its id
+     */
+    void addComment(String id, ChangedContent comment);
+
+    /**
+     * update a Requirement, specified by its id, the comment param can be null, changes: key of map is what field has to be
+     * changed,
+     */
+    void updateRequirement(String id, String comment, HashMap<Field, ChangedContent> changes);
 }
 // @extract-end

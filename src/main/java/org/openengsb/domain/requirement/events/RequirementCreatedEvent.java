@@ -15,23 +15,35 @@
  * limitations under the License.
  */
 
-package org.openengsb.domain.requirement;
+package org.openengsb.domain.requirement.events;
 
-import org.openengsb.core.api.DomainEvents;
-import org.openengsb.domain.requirement.events.RequirementChangedEvent;
-import org.openengsb.domain.requirement.events.RequirementCommentedEvent;
-import org.openengsb.domain.requirement.events.RequirementCreatedEvent;
-import org.openengsb.domain.requirement.events.RequirementDeletedEvent;
+import org.openengsb.core.api.Event;
+import org.openengsb.domain.requirement.ChangedContent;
+import org.openengsb.domain.requirement.Requirement;
 
-// @extract-start RequirementDomainEvents
-public interface RequirementDomainEvents extends DomainEvents {
+/**
+ * Created with IntelliJ IDEA.
+ * User: Peter
+ * Date: 06.07.12
+ * Time: 15:35
+ * To change this template use File | Settings | File Templates.
+ */
+public class RequirementCreatedEvent extends Event{
+    private Requirement requirement;
 
-    String raiseRequirementCreatedEvent(RequirementCreatedEvent event);
+    public RequirementCreatedEvent() {
+    }
 
-    void raiseRequirementChangedEvent(RequirementChangedEvent event);
+    public RequirementCreatedEvent(Requirement requirement) {
+        this();
+        this.requirement = requirement;
+    }
 
-    void raiseRequirementDeletedEvent(RequirementDeletedEvent event);
+    public Requirement getComment() {
+        return requirement;
+    }
 
-    void raiseRequirementCommentedEvent(RequirementCommentedEvent event);
+    public void setComment(Requirement requirement) {
+        this.requirement = requirement;
+    }
 }
-// @extract-end
