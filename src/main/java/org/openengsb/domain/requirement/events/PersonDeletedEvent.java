@@ -18,21 +18,22 @@
 package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
+import org.openengsb.domain.requirement.Person;
 
 public class PersonDeletedEvent extends Event{
     /**
-     * The id of the deleted person.
+     * The deleted person.
      */
-    private String id;
+    private Person person;
 
     /**
-     * The id of the deleted person.
+     * The deleted person.
      */
-    public String getId() {
-        return id;
+    public Person getPerson() {
+        return person;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setPerson(Person person) {
+        this.person = person;
     }
 }

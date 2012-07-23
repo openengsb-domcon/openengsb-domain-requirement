@@ -18,21 +18,22 @@
 package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
+import org.openengsb.domain.requirement.Requirement;
 
 public class RequirementDeletedEvent extends Event{
     /**
-     * The id of the deleted requirement.
+     * The deleted requirement.
      */
-    private String id;
+    private Requirement requirement;
 
     /**
      * The id of the deleted requirement.
      */
-    public String getId() {
-        return id;
+    public Requirement getRequirement() {
+        return requirement;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setRequirement(Requirement requirement) {
+        this.requirement = requirement;
     }
 }
