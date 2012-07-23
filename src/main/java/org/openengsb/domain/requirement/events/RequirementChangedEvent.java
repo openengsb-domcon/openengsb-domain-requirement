@@ -18,39 +18,25 @@
 package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
-import org.openengsb.domain.requirement.ChangedContent;
+import org.openengsb.domain.requirement.Comment;
+import org.openengsb.domain.requirement.Requirement;
 
 import java.util.HashMap;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Peter
- * Date: 06.07.12
- * Time: 15:32
- * To change this template use File | Settings | File Templates.
- */
 public class RequirementChangedEvent extends Event {
-    private String id;
-    private HashMap<String, ChangedContent> changes;
+    /**
+     * The requirement which has changed.
+     */
+    private Requirement requirement;
 
-    public RequirementChangedEvent(String id) {
-        this.id = id;
+    /**
+     * The requirement which has changed.
+     */
+    public Requirement getRequirement() {
+        return requirement;
     }
 
-    public RequirementChangedEvent(String id, HashMap<String, ChangedContent> changes) {
-        this(id);
-        this.changes = changes;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public HashMap<String, ChangedContent> getChanges() {
-        return changes;
-    }
-
-    public void setChanges(HashMap<String, ChangedContent> changes) {
-        this.changes = changes;
+    public void setRequirement(Requirement requirement) {
+        this.requirement = requirement;
     }
 }

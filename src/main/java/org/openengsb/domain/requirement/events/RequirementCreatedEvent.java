@@ -18,25 +18,15 @@
 package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
-import org.openengsb.domain.requirement.ChangedContent;
 import org.openengsb.domain.requirement.Requirement;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Peter
- * Date: 06.07.12
- * Time: 15:35
- * To change this template use File | Settings | File Templates.
- */
 public class RequirementCreatedEvent extends Event{
+    /**
+     * A newly created requirement
+     */
     private Requirement requirement;
 
     public RequirementCreatedEvent() {
-    }
-
-    public RequirementCreatedEvent(Requirement requirement) {
-        this();
-        this.requirement = requirement;
     }
 
     public Requirement getComment() {

@@ -17,13 +17,12 @@
 
 package org.openengsb.domain.requirement;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Peter
- * Date: 06.07.12
- * Time: 15:07
- * To change this template use File | Settings | File Templates.
- */
+import org.openengsb.core.api.Constants;
+import org.openengsb.core.api.model.annotation.Model;
+import org.openengsb.labs.delegation.service.Provide;
+
+@Provide(context = {Constants.DELEGATION_CONTEXT_MODELS})
+@Model
 public class Comment {
     private Person person;
     private String dateTime;

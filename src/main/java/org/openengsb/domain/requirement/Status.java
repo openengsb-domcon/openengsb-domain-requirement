@@ -17,9 +17,9 @@
 
 package org.openengsb.domain.requirement;
 
-public enum Status implements RequirementAttribute {
+public enum Status {
     NEW,
-    ASSIGNED,
+    ASSIGNED_TO,
     APPROVED,
     REJECTED
 }

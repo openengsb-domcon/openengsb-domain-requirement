@@ -21,12 +21,12 @@ import org.openengsb.core.api.Event;
 
 public class PersonDeletedEvent extends Event{
     /**
-     * The id of the deleted requirement.
+     * The id of the deleted person.
      */
     private String id;
 
     /**
-     * The id of the deleted requirement.
+     * The id of the deleted person.
      */
     public String getId() {
         return id;

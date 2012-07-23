@@ -18,22 +18,23 @@
 package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
+import org.openengsb.domain.requirement.Person;
 import org.openengsb.domain.requirement.Requirement;
 
 public class PersonCreatedEvent extends Event{
     /**
-     * A newly created requirement
+     * A newly created person
      */
-    private Requirement requirement;
+    private Person requirement;
 
-    public PersonCreatedEvent() {
-    }
-
-    public Requirement getComment() {
+    /**
+     * A newly created person
+     */
+    public Person getRequirement() {
         return requirement;
     }
 
-    public void setComment(Requirement requirement) {
+    public void setRequirement(Person requirement) {
         this.requirement = requirement;
     }
 }

@@ -17,7 +17,7 @@
 
 package org.openengsb.domain.requirement;
 
-public enum Priority implements RequirementAttribute {
+public enum Priority {
     URGENT,
     HIGH,
     NORMAL,

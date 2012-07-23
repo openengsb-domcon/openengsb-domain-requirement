@@ -17,63 +17,221 @@
 
 package org.openengsb.domain.requirement;
 
-import java.util.HashMap;
 import java.util.List;
-import org.openengsb.core.api.model.OpenEngSBModel;
-import org.openengsb.core.api.model.OpenEngSBModelId;
 
-public interface Requirement extends OpenEngSBModel {
+import org.openengsb.core.api.Constants;
+import org.openengsb.core.api.model.annotation.Model;
+import org.openengsb.core.api.model.annotation.OpenEngSBModelId;
+import org.openengsb.labs.delegation.service.Provide;
 
-    String getId();
+@Provide(context = {Constants.DELEGATION_CONTEXT_MODELS})
+@Model
+public class Requirement {
 
     @OpenEngSBModelId
-    void setId(String id);
-    
-    String getTitle();
+    private String id;
 
-    void setTitle(String title);
+    /**
+     * The title of the document / name of the requirement
+     */
+    private String title;
 
-    String getShortDescription();
+    /**
+     * A very short description (abstract)
+     */
+    private String shortDescription;
 
-    void setShortDescription(String description);
+    /**
+     * The description of the requirement in the domain language
+     */
+    private String description;
 
-    String getDescription();
+    /**
+     * A technical description how it should be implemented, which can be used for issue trackers.
+     * Also necessary if the developer doesn't have a clue about the domain.
+     */
+    private String technicalDescription;
 
-    void setDescription(String description);
+    /**
+     * The person to whom the requirement has been assigned to, to create / edit / review it.
+     */
+    private Person assignedTo;
 
-    String getTechnicalDescription();
+    /**
+     * The priority of the requirement is also the priority in which it should be finished.
+     */
+    private Priority priority;
 
-    void setTechnicalDescription(String technicalDescription);
+    /**
+     * The current status of the requirement.
+     */
+    private Status status;
 
-    String getAssignedTo();
+    /**
+     * The type of the requirement (New feature, improvement, ...)
+     */
+    private Type type;
 
-    void setAssignedTo(String assignedTo);
-    
-    Priority getPriority();
+    /**
+     * The time estimated to develop the requirement starting from when it has been approved.
+     * Can be defined as man-days, man-weeks, ...
+     */
+    private String estimatedTime;
 
-    void setPriority(Priority priority);
+    /**
+     * Comments added to the document.
+     */
+    private List<Comment> comments;
 
-    Status getStatus();
+    /**
+     * When was the document changed the last time. (Comments aren't changes.
+     */
+    private long lastChange;
 
-    void setStatus(Status status);
+    /**
+     * By whom has it been changed? (maybe not the person to whom it has been assigned to)
+     */
+    private Person lastChangeBy;
 
-    Type getType();
+    public String getId() {
+        return id;
+    }
 
-    void setType(Type type);
+    public void setId(String id) {
+        this.id = id;
+    }
 
-    String getEstimatedTime();
+    /**
+     * The title of the document / name of the requirement
+     */
+    public String getTitle() {
+        return title;
+    }
 
-    void setEstimatedTime(String estimatedTime);
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-    String getDeadline();
+    /**
+     * A very short description (abstract)
+     */
+    public String getShortDescription() {
+        return shortDescription;
+    }
 
-    void setDeadline(String deadline);
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
+    }
 
-    HashMap<Field, ChangedContent> getChanges();
+    /**
+     * The description of the requirement in the domain language
+     */
+    public String getDescription() {
+        return description;
+    }
 
-    void setChanges(HashMap<Field, ChangedContent> changes);
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-    List<ChangedContent> getComments();
+    /**
+     * A technical description how it should be implemented, which can be used for issue trackers.
+     * Also necessary if the developer doesn't have a clue about the domain.
+     */
+    public String getTechnicalDescription() {
+        return technicalDescription;
+    }
 
-    void setComments(List<ChangedContent> comments);
+    public void setTechnicalDescription(String technicalDescription) {
+        this.technicalDescription = technicalDescription;
+    }
+
+    /**
+     * The person to whom the requirement has been assigned to, to create / edit / review it.
+     */
+    public Person getAssignedTo() {
+        return assignedTo;
+    }
+
+    public void setAssignedTo(Person assignedTo) {
+        this.assignedTo = assignedTo;
+    }
+
+    /**
+     * The priority of the requirement is also the priority in which it should be finished.
+     */
+    public Priority getPriority() {
+        return priority;
+    }
+
+    public void setPriority(Priority priority) {
+        this.priority = priority;
+    }
+
+    /**
+     * The current status of the requirement.
+     */
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    /**
+     * The type of the requirement (New feature, improvement, ...)
+     */
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    /**
+     * The time estimated to develop the requirement starting from when it has been approved.
+     * Can be defined as man-days, man-weeks, ...
+     */
+    public String getEstimatedTime() {
+        return estimatedTime;
+    }
+
+    public void setEstimatedTime(String estimatedTime) {
+        this.estimatedTime = estimatedTime;
+    }
+
+    /**
+     * Comments added to the document.
+     */
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+    /**
+     * When was the document changed the last time. (Comments aren't changes.
+     */
+    public long getLastChange() {
+        return lastChange;
+    }
+
+    public void setLastChange(long lastChange) {
+        this.lastChange = lastChange;
+    }
+
+    /**
+     * By whom has it been changed? (maybe not the person to whom it has been assigned to)
+     */
+    public Person getLastChangeBy() {
+        return lastChangeBy;
+    }
+
+    public void setLastChangeBy(Person lastChangeBy) {
+        this.lastChangeBy = lastChangeBy;
+    }
 }

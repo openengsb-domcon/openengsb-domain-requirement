@@ -18,22 +18,23 @@
 package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
+import org.openengsb.domain.requirement.Person;
 import org.openengsb.domain.requirement.Requirement;
 
 public class PersonChangedEvent extends Event {
     /**
-     * The requirement which has changed.
+     * The person which has changed.
      */
-    private Requirement requirement;
+    private Person person;
 
     /**
-     * The requirement which has changed.
+     * The person which has changed.
      */
-    public Requirement getRequirement() {
-        return requirement;
+    public Person getPerson() {
+        return person;
     }
 
-    public void setRequirement(Requirement requirement) {
-        this.requirement = requirement;
+    public void setPerson(Person person) {
+        this.person = person;
     }
 }

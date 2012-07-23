@@ -19,21 +19,20 @@ package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Peter
- * Date: 06.07.12
- * Time: 15:39
- * To change this template use File | Settings | File Templates.
- */
 public class RequirementDeletedEvent extends Event{
+    /**
+     * The id of the deleted requirement.
+     */
     private String id;
 
-    public RequirementDeletedEvent(String id) {
-        this.id = id;
-    }
-
+    /**
+     * The id of the deleted requirement.
+     */
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

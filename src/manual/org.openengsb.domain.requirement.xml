@@ -28,13 +28,13 @@
       <holder>Austrian Association for Software Tool Integration (AASTI)</holder>
     </copyright>
     <subtitle>Version ${project.version}</subtitle>
-    <author>
+    <person>
       <personname>
         <firstname>Open Engineering Service Bus</firstname>
         <surname>Development Team and Contributors</surname>
       </personname>
       <email>openengsb-dev at googlegroups.com</email>
-    </author>
+    </person>
   </info>
   <xi:include href="docbook/org.openengsb.domain.requirement.xml"/>
 </book>

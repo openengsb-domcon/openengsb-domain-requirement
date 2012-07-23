@@ -17,21 +17,70 @@
 
 package org.openengsb.domain.requirement;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Peter
- * Date: 06.07.12
- * Time: 15:09
- * To change this template use File | Settings | File Templates.
- */
-public class Person {
-    private  String name;
+import org.openengsb.core.api.Constants;
+import org.openengsb.core.api.model.annotation.Model;
+import org.openengsb.core.api.model.annotation.OpenEngSBModelId;
+import org.openengsb.labs.delegation.service.Provide;
 
+@Provide(context = {Constants.DELEGATION_CONTEXT_MODELS})
+@Model
+public class Person {
+    @OpenEngSBModelId
+    private String id;
+
+    /**
+     * A short name of the person (could be user name, nick name, ...)
+     */
+    private String name;
+
+    /**
+     * The full name of the person
+     */
+    private String fullName;
+
+    /**
+     * The eMailAddress of the person
+     */
+    private String EmailAddress;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    /**
+     * A short name of the person (could be user name, nick name, ...)
+     */
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * The full name of the person
+     */
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    /**
+     * The eMailAddress of the person
+     */
+    public String getEmailAddress() {
+        return EmailAddress;
+    }
+
+    public void setEmailAddress(String eMailAddress) {
+        this.EmailAddress = eMailAddress;
     }
 }

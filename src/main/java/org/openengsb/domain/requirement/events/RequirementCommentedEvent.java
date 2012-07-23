@@ -18,39 +18,38 @@
 package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
-import org.openengsb.domain.requirement.ChangedContent;
+import org.openengsb.domain.requirement.Comment;
 
-import java.util.HashMap;
-
-/**
- * Created with IntelliJ IDEA.
- * User: Peter
- * Date: 06.07.12
- * Time: 15:40
- * To change this template use File | Settings | File Templates.
- */
 public class RequirementCommentedEvent extends Event{
+    /**
+     * The requirements id
+     */
     private String id;
-    private ChangedContent comment;
 
-    public RequirementCommentedEvent(String id) {
-        this.id = id;
-    }
+    /***
+     * The comment
+     */
+    private Comment comment;
 
-    public RequirementCommentedEvent(String id, ChangedContent comment) {
-        this(id);
-        this.comment = comment;
-    }
-
+    /**
+     * The requirements id
+     */
     public String getId() {
         return id;
     }
 
-    public ChangedContent getComment() {
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    /***
+     * The comment
+     */
+    public Comment getComment() {
         return comment;
     }
 
-    public void setComment(ChangedContent comment) {
+    public void setComment(Comment comment) {
         this.comment = comment;
     }
 }

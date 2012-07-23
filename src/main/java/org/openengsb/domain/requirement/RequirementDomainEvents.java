@@ -18,10 +18,7 @@
 package org.openengsb.domain.requirement;
 
 import org.openengsb.core.api.DomainEvents;
-import org.openengsb.domain.requirement.events.RequirementChangedEvent;
-import org.openengsb.domain.requirement.events.RequirementCommentedEvent;
-import org.openengsb.domain.requirement.events.RequirementCreatedEvent;
-import org.openengsb.domain.requirement.events.RequirementDeletedEvent;
+import org.openengsb.domain.requirement.events.*;
 
 // @extract-start RequirementDomainEvents
 public interface RequirementDomainEvents extends DomainEvents {
@@ -30,8 +27,20 @@ public interface RequirementDomainEvents extends DomainEvents {
 
     void raiseRequirementChangedEvent(RequirementChangedEvent event);
 
+    void raiseRequirementAssignedEvent(RequirementStatusChangedEvent event);
+
     void raiseRequirementDeletedEvent(RequirementDeletedEvent event);
 
     void raiseRequirementCommentedEvent(RequirementCommentedEvent event);
+
+    void raiseListRequiremntsEvent(ListRequirementsEvent event);
+
+    String raisePersonCreatedEvent(PersonCreatedEvent event);
+
+    void raisePersonEditedEvent(PersonChangedEvent event);
+
+    void raisePersonDeletedEvent(PersonDeletedEvent event);
+
+    void raiseListPersonssEvent(ListPersonsEvent event);
 }
 // @extract-end

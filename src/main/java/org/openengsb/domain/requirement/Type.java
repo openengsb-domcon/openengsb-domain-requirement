@@ -17,7 +17,7 @@
 
 package org.openengsb.domain.requirement;
 
-public enum Type implements RequirementAttribute {
+public enum Type {
     NEW_FEATURE,
     IMPROVEMENT
 }
