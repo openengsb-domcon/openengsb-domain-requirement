@@ -43,7 +43,7 @@ This project includes:
   JUnit under Common Public License Version 1.0
   Knowledge API under The Apache Software License, Version 2.0
   Mockito under The MIT License
-  OpenEngSB :: Domain :: Issue under Apache 2
+  OpenEngSB :: Domain :: Requirement under Apache 2
   OpenEngSB :: Framework :: API under Apache 2
   OpenEngSB :: Framework :: Common under Apache 2
   org.osgi.compendium under Apache License, Version 2.0
