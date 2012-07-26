@@ -22,6 +22,10 @@ import java.util.List;
 
 import org.openengsb.core.api.Domain;
 
+/**
+ * This domain allows the implementation of connectors for different editors
+ * to create, edit and manage requirement documents in a semantic way.
+ */
 // @extract-start RequirementDomain
 public interface RequirementDomain extends Domain {
 

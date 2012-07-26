@@ -21,6 +21,9 @@ import org.openengsb.core.api.Event;
 import org.openengsb.domain.requirement.Person;
 import org.openengsb.domain.requirement.Requirement;
 
+/**
+ * To be raised when information about a person have changed.
+ */
 public class PersonChangedEvent extends Event {
     /**
      * The person which has changed.

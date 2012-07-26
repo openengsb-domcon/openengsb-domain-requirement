@@ -19,6 +19,6 @@ package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
 
-public class ListRequirementsEvent extends Event {
+public class SyncPersonsEvent extends Event {
 
 }

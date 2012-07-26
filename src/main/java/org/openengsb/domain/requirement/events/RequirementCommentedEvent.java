@@ -20,6 +20,9 @@ package org.openengsb.domain.requirement.events;
 import org.openengsb.core.api.Event;
 import org.openengsb.domain.requirement.Comment;
 
+/**
+ * To be raised when somebody has commented to a requirement.
+ */
 public class RequirementCommentedEvent extends Event{
     /**
      * The requirements id

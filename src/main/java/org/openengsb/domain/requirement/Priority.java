@@ -17,10 +17,12 @@
 
 package org.openengsb.domain.requirement;
 
+/**
+ * The priority of a requirement can vary between very URGENT and only NICE_TO_HAVE
+ */
 public enum Priority {
     URGENT,
-    HIGH,
-    NORMAL,
-    LOW,
+    REQUIRED,
+    OPTIONAL,
     NICE_TO_HAVE
 }

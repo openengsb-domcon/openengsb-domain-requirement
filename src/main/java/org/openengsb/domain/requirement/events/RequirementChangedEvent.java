@@ -23,6 +23,9 @@ import org.openengsb.domain.requirement.Requirement;
 
 import java.util.HashMap;
 
+/**
+ * To be raised when somebody has edited the requirement model.
+ */
 public class RequirementChangedEvent extends Event {
     /**
      * The requirement which has changed.

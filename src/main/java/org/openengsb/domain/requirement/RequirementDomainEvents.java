@@ -20,27 +20,45 @@ package org.openengsb.domain.requirement;
 import org.openengsb.core.api.DomainEvents;
 import org.openengsb.domain.requirement.events.*;
 
+/**
+ * Necessary events for the RequirementDomain
+ */
 // @extract-start RequirementDomainEvents
 public interface RequirementDomainEvents extends DomainEvents {
 
     String raiseRequirementCreatedEvent(RequirementCreatedEvent event);
 
+    /**
+     * To be raised when somebody has edited the requirement model.
+     */
     void raiseRequirementChangedEvent(RequirementChangedEvent event);
 
     void raiseRequirementAssignedEvent(RequirementStatusChangedEvent event);
 
     void raiseRequirementDeletedEvent(RequirementDeletedEvent event);
 
+    /**
+     * To be raised when somebody has commented to a requirement.
+     */
     void raiseRequirementCommentedEvent(RequirementCommentedEvent event);
 
-    void raiseListRequiremntsEvent(ListRequirementsEvent event);
+    void raiseSyncRequirementsEvent(SyncRequirementsEvent event);
 
+    /**
+     * To be raised when information about a new person have been entered
+     */
     String raisePersonCreatedEvent(PersonCreatedEvent event);
 
-    void raisePersonEditedEvent(PersonChangedEvent event);
+    /**
+     * To be raised when information about a person have changed.
+     */
+    void raisePersonChangedEvent(PersonChangedEvent event);
 
+    /**
+     * To be raised when a person has been deleted.
+     */
     void raisePersonDeletedEvent(PersonDeletedEvent event);
 
-    void raiseListPersonssEvent(ListPersonsEvent event);
+    void raiseSyncPersonsEvent(SyncPersonsEvent event);
 }
 // @extract-end

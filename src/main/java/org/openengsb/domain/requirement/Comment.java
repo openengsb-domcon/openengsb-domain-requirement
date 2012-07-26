@@ -21,6 +21,9 @@ import org.openengsb.core.api.Constants;
 import org.openengsb.core.api.model.annotation.Model;
 import org.openengsb.labs.delegation.service.Provide;
 
+/**
+ * A comment in a requirement to give other persons feedback about the content.
+ */
 @Provide(context = {Constants.DELEGATION_CONTEXT_MODELS})
 @Model
 public class Comment {

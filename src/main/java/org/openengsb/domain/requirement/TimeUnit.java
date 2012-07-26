@@ -15,10 +15,11 @@
  * limitations under the License.
  */
 
-package org.openengsb.domain.requirement.events;
+package org.openengsb.domain.requirement;
 
-import org.openengsb.core.api.Event;
-
-public class ListPersonsEvent extends Event {
-
+/**
+ * The units to measure time of requirements (projects)
+ */
+public enum TimeUnit {
+    HOUR, DAY, WEEK, MONTH, YEAR
 }

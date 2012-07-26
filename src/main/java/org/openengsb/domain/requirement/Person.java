@@ -22,6 +22,9 @@ import org.openengsb.core.api.model.annotation.Model;
 import org.openengsb.core.api.model.annotation.OpenEngSBModelId;
 import org.openengsb.labs.delegation.service.Provide;
 
+/**
+ * Authors, contributors,... of a requirement and in the process of creating the requirement.
+ */
 @Provide(context = {Constants.DELEGATION_CONTEXT_MODELS})
 @Model
 public class Person {

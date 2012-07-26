@@ -24,6 +24,11 @@ import org.openengsb.core.api.model.annotation.Model;
 import org.openengsb.core.api.model.annotation.OpenEngSBModelId;
 import org.openengsb.labs.delegation.service.Provide;
 
+/**
+ * The requirement model has properties to store all necessary information about a requirement
+ * - who has changed it, what's the content, what's the priority -
+ * to be able to handle it in a process and treat it as a project artifact.
+ */
 @Provide(context = {Constants.DELEGATION_CONTEXT_MODELS})
 @Model
 public class Requirement {
@@ -76,7 +81,7 @@ public class Requirement {
      * The time estimated to develop the requirement starting from when it has been approved.
      * Can be defined as man-days, man-weeks, ...
      */
-    private String estimatedTime;
+    private ManUnits estimatedTime;
 
     /**
      * Comments added to the document.
@@ -194,11 +199,11 @@ public class Requirement {
      * The time estimated to develop the requirement starting from when it has been approved.
      * Can be defined as man-days, man-weeks, ...
      */
-    public String getEstimatedTime() {
+    public ManUnits getEstimatedTime() {
         return estimatedTime;
     }
 
-    public void setEstimatedTime(String estimatedTime) {
+    public void setEstimatedTime(ManUnits estimatedTime) {
         this.estimatedTime = estimatedTime;
     }
 
