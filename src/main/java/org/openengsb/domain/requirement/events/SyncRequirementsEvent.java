@@ -19,6 +19,9 @@ package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
 
+/**
+ * To be raised to retrieve a list of all requirements.
+ */
 public class SyncRequirementsEvent extends Event {
 
 }

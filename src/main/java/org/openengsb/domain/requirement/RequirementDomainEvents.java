@@ -26,6 +26,9 @@ import org.openengsb.domain.requirement.events.*;
 // @extract-start RequirementDomainEvents
 public interface RequirementDomainEvents extends DomainEvents {
 
+    /**
+     * To be raised when a new requirement has been created.
+     */
     String raiseRequirementCreatedEvent(RequirementCreatedEvent event);
 
     /**
@@ -33,6 +36,9 @@ public interface RequirementDomainEvents extends DomainEvents {
      */
     void raiseRequirementChangedEvent(RequirementChangedEvent event);
 
+    /**
+     * To be raised when the status of a requirement has changed or when it has been assigned to another person.
+     */
     void raiseRequirementAssignedEvent(RequirementStatusChangedEvent event);
 
     void raiseRequirementDeletedEvent(RequirementDeletedEvent event);
@@ -42,6 +48,9 @@ public interface RequirementDomainEvents extends DomainEvents {
      */
     void raiseRequirementCommentedEvent(RequirementCommentedEvent event);
 
+    /**
+     * To be raised to retrieve a list of all requirements.
+     */
     void raiseSyncRequirementsEvent(SyncRequirementsEvent event);
 
     /**
@@ -59,6 +68,9 @@ public interface RequirementDomainEvents extends DomainEvents {
      */
     void raisePersonDeletedEvent(PersonDeletedEvent event);
 
+    /**
+     * To be raised to retrieve a list of all persons.
+     */
     void raiseSyncPersonsEvent(SyncPersonsEvent event);
 }
 // @extract-end

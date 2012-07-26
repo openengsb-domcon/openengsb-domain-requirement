@@ -20,6 +20,9 @@ package org.openengsb.domain.requirement.events;
 import org.openengsb.core.api.Event;
 import org.openengsb.domain.requirement.Requirement;
 
+/**
+ * To be raised when a new requirement has been created.
+ */
 public class RequirementCreatedEvent extends Event{
     /**
      * A newly created requirement

@@ -17,6 +17,9 @@
 
 package org.openengsb.domain.requirement;
 
+/**
+ * The status of a requirement
+ */
 public enum Status {
     NEW,
     ASSIGNED_TO,

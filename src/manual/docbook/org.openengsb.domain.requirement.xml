@@ -26,5 +26,18 @@
   http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema-instance.xsd">
 
   <title>Requirement Domain</title>
+  <section>
+	<title>What is the Requirement Domain?</title>
+	<para>
+		The Requirement Domain is here to help creating requirements in a prefered editor or application (depends for which you write a connector) and using these requirements over the whole workflow of a project as project artefacts. As they should be intended to be used.
+	</para>
+  </section>
+  <section>
+	<title>What can I do with Requirements in the Requirement Domain?</title>
+	<para>
+		The requirements in the domain are firstly created in an editor / application of your choice. Or can be also created based on an event. Once this has been done and it has been assigned to somebody, people can start to work on it in a collaborative way. You can track the changes and project managers, architects, ... can add comments and approve / decline the requirement.
+		After it has been approved, it could be printed, sent or event converted to an issue so you don't loose the valuebla information and hard work.
+	</para>
+  </section>
 </chapter>
 
