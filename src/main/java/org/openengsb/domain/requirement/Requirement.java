@@ -22,6 +22,7 @@ import org.openengsb.core.api.model.annotation.Model;
 import org.openengsb.core.api.model.annotation.OpenEngSBModelId;
 import org.openengsb.labs.delegation.service.Provide;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -86,7 +87,7 @@ public class Requirement {
     /**
      * When was the document changed the last time. (Comments aren't changes.
      */
-    private long lastChange;
+    private Date lastChange;
 
     /**
      * By whom has it been changed? (maybe not the person to whom it has been assigned to)
@@ -205,11 +206,11 @@ public class Requirement {
     /**
      * When was the document changed the last time. (Comments aren't changes.
      */
-    public long getLastChange() {
+    public Date getLastChange() {
         return lastChange;
     }
 
-    public void setLastChange(long lastChange) {
+    public void setLastChange(Date lastChange) {
         this.lastChange = lastChange;
     }
 
