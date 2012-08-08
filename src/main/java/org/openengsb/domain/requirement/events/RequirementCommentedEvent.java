@@ -18,41 +18,25 @@
 package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
-import org.openengsb.domain.requirement.Comment;
+import org.openengsb.domain.requirement.Requirement;
 
 /**
  * To be raised when somebody has commented to a requirement.
  */
 public class RequirementCommentedEvent extends Event{
     /**
-     * The requirements id
+     * The requirement with the new comment
      */
-    private String id;
-
-    /***
-     * The comment
-     */
-    private Comment comment;
+    private Requirement requirement;
 
     /**
-     * The requirements id
+     * The requirement with the new comment
      */
-    public String getId() {
-        return id;
+    public Requirement getRequirement() {
+        return requirement;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    /***
-     * The comment
-     */
-    public Comment getComment() {
-        return comment;
-    }
-
-    public void setComment(Comment comment) {
-        this.comment = comment;
+    public void setRequirement(Requirement requirement) {
+        this.requirement = requirement;
     }
 }

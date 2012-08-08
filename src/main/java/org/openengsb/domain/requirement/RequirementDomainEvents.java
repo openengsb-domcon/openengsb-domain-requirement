@@ -37,10 +37,13 @@ public interface RequirementDomainEvents extends DomainEvents {
     void raiseRequirementChangedEvent(RequirementChangedEvent event);
 
     /**
-     * To be raised when the status of a requirement has changed or when it has been assigned to another person.
+     * To be raised when a requirement has been assigned to another person.
      */
-    void raiseRequirementAssignedEvent(RequirementStatusChangedEvent event);
+    void raiseRequirementAssignedEvent(RequirementAssignedEvent event);
 
+    /**
+     * To be raised when a requirement has been deleted.
+     */
     void raiseRequirementDeletedEvent(RequirementDeletedEvent event);
 
     /**
