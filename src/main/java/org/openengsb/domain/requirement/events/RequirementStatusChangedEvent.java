@@ -1,7 +1,6 @@
 package org.openengsb.domain.requirement.events;
 
 import org.openengsb.domain.requirement.Person;
-import org.openengsb.domain.requirement.Status;
 
 /**
  * To be raised when the status of a requirement has changed or when it has been assigned to another person.

@@ -17,12 +17,12 @@
 
 package org.openengsb.domain.requirement;
 
-import java.util.List;
-
 import org.openengsb.core.api.Constants;
 import org.openengsb.core.api.model.annotation.Model;
 import org.openengsb.core.api.model.annotation.OpenEngSBModelId;
 import org.openengsb.labs.delegation.service.Provide;
+
+import java.util.List;
 
 /**
  * The requirement model has properties to store all necessary information about a requirement
@@ -66,11 +66,6 @@ public class Requirement {
      * The priority of the requirement is also the priority in which it should be finished.
      */
     private Priority priority;
-
-    /**
-     * The current status of the requirement.
-     */
-    private Status status;
 
     /**
      * The type of the requirement (New feature, improvement, ...)
@@ -171,17 +166,6 @@ public class Requirement {
 
     public void setPriority(Priority priority) {
         this.priority = priority;
-    }
-
-    /**
-     * The current status of the requirement.
-     */
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
     }
 
     /**

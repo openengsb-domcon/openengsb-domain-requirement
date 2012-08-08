@@ -29,7 +29,7 @@ public interface RequirementDomainEvents extends DomainEvents {
     /**
      * To be raised when a new requirement has been created.
      */
-    String raiseRequirementCreatedEvent(RequirementCreatedEvent event);
+    void raiseRequirementCreatedEvent(RequirementCreatedEvent event);
 
     /**
      * To be raised when somebody has edited the requirement model.
@@ -56,7 +56,7 @@ public interface RequirementDomainEvents extends DomainEvents {
     /**
      * To be raised when information about a new person have been entered
      */
-    String raisePersonCreatedEvent(PersonCreatedEvent event);
+    void raisePersonCreatedEvent(PersonCreatedEvent event);
 
     /**
      * To be raised when information about a person have changed.

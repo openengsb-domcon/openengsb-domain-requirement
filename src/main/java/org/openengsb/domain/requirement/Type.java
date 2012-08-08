@@ -21,6 +21,6 @@ package org.openengsb.domain.requirement;
  * Type of a requirement, to see if it's something new, or an improvement (in any way - performance, usability, ...)
  */
 public enum Type {
-    NEW_FEATURE,
-    IMPROVEMENT
+    FUNCTIONAL,
+    NON_FUNCTIONAL
 }
