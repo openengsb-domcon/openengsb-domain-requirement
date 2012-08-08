@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed to the Austrian Association for Software Tool Integration (AASTI)
+    under one or more contributor license agreements. See the NOTICE file
+    distributed with this work for additional information regarding copyright
+    ownership. The AASTI licenses this file to you under the Apache License,
+    Version 2.0 (the "License"); you may not use this file except in compliance
+    with the License. You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+
+<chapter xml:id="domains.requirement.domain" version="5.0" xmlns="http://docbook.org/ns/docbook"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xsi:schemaLocation="http://docbook.org/ns/docbook http://www.docbook.org/xml/5.0/xsd/docbook.xsd
+  http://www.w3.org/1999/xlink http://www.docbook.org/xml/5.0/xsd/xlink.xsd
+  http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema-instance.xsd">
+
+  <title>Requirement Domain</title>
+  <section>
+	<title>What is the Requirement Domain?</title>
+	<para>
+		The Requirement Domain is here to help creating requirements in a prefered editor or application (depends for which you write a connector) and using these requirements over the whole workflow of a project as project artefacts, as it should be intended.
+	</para>
+  </section>
+  <section>
+	<title>What can I do with Requirements in the Requirement Domain?</title>
+	<para>
+		The requirements in the domain are firstly created in an editor / application of your choice. Or can be also created based on an event. Once this has been done and it has been assigned to somebody, people can start to work on it in a collaborative way. You can track the changes and project managers, architects, ... can add comments and approve / decline the requirement.
+		After it has been approved, it could be printed, sent or event converted to an issue so you don't loose the valuebla information and hard work.
+	</para>
+  </section>
+</chapter>
+
