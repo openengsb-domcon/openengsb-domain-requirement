@@ -1,2 +1,1 @@
--openengsb-domain-requirement
-=============================
+openengsb-domain-requirement
