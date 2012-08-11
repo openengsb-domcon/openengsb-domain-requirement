@@ -19,8 +19,10 @@ package org.openengsb.domain.requirement;
 
 /**
  * Type of a requirement, to see if it's something new, or an improvement (in any way - performance, usability, ...)
+ *
+ * TODO: change to enum
  */
-public enum Type {
-    FUNCTIONAL,
-    NON_FUNCTIONAL
+public class Type {
+    public static final String FUNCTIONAL = "FUNCTIONAL";
+    public static final String NON_FUNCTIONAL = "NON_FUNCTIONAL";
 }

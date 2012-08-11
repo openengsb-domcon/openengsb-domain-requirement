@@ -17,10 +17,9 @@
 
 package org.openengsb.domain.requirement;
 
-import java.util.HashMap;
-import java.util.List;
-
 import org.openengsb.core.api.Domain;
+
+import java.util.List;
 
 /**
  * This domain allows the implementation of connectors for different editors
@@ -40,9 +39,9 @@ public interface RequirementDomain extends Domain {
     void displayRequirement(List<Requirement> requirementWithHistory);
 
     /**
-     * add a comment to a requirement, specified by its id
+     * the comments in a requirement have changed
      */
-    void addComment(String id, Comment comment);
+    void updateComments(Requirement requirement);
 
     /**
      * A requirement (id) has changed and should be updated if the user is viewing it.

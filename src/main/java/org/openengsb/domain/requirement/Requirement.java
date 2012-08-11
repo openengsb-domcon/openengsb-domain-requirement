@@ -65,13 +65,17 @@ public class Requirement {
 
     /**
      * The priority of the requirement is also the priority in which it should be finished.
+     *
+     * TODO: Change later back in Priority
      */
-    private Priority priority;
+    private String priority;
 
     /**
      * The type of the requirement (New feature, improvement, ...)
+     *
+     * TODO: Change later back in Type
      */
-    private Type type;
+    private String type;
 
     /**
      * The time estimated to develop the requirement starting from when it has been approved.
@@ -161,22 +165,22 @@ public class Requirement {
     /**
      * The priority of the requirement is also the priority in which it should be finished.
      */
-    public Priority getPriority() {
+    public String getPriority() {
         return priority;
     }
 
-    public void setPriority(Priority priority) {
+    public void setPriority(String priority) {
         this.priority = priority;
     }
 
     /**
      * The type of the requirement (New feature, improvement, ...)
      */
-    public Type getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(String type) {
         this.type = type;
     }
 
