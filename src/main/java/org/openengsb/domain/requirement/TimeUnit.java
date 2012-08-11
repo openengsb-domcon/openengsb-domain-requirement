@@ -19,7 +19,13 @@ package org.openengsb.domain.requirement;
 
 /**
  * The units to measure time of requirements (projects)
+ *
+ * TODO: change back to enum
  */
-public enum TimeUnit {
-    HOUR, DAY, WEEK, MONTH, YEAR
+public class TimeUnit {
+    public static final String HOUR = "HOUR";
+    public static final String DAY = "DAY";
+    public static final String WEEK = "WEEK";
+    public static final String MONTH = "MONTH";
+    public static final String YEAR = "YEAR";
 }
