@@ -37,7 +37,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.openengsb.domain</groupId>
   <artifactId>org.openengsb.domain.requirement</artifactId>
-  <version>3.0.0-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <name>OpenEngSB :: Domain :: Requirement</name>
 
