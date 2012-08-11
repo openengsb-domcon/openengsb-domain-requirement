@@ -20,7 +20,7 @@ package org.openengsb.domain.requirement;
 /**
  * The priority of a requirement can vary between very URGENT and only NICE_TO_HAVE
  *
- * TODO: change back to enum
+ * TODO: OPENENGSB-3250, change back to enum
  */
 public class Priority {
     public static final String URGENT = "URGENT";

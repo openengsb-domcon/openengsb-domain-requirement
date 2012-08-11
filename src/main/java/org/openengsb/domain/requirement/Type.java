@@ -20,7 +20,7 @@ package org.openengsb.domain.requirement;
 /**
  * Type of a requirement, to see if it's something new, or an improvement (in any way - performance, usability, ...)
  *
- * TODO: change to enum
+ * TODO: OPENENGSB-3250, change to enum
  */
 public class Type {
     public static final String FUNCTIONAL = "FUNCTIONAL";

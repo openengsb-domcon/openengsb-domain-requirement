@@ -20,7 +20,7 @@ package org.openengsb.domain.requirement;
 /**
  * The units to measure time of requirements (projects)
  *
- * TODO: change back to enum
+ * TODO: OPENENGSB-3250, change back to enum
  */
 public class TimeUnit {
     public static final String HOUR = "HOUR";

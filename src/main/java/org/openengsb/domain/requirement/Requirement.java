@@ -66,14 +66,14 @@ public class Requirement {
     /**
      * The priority of the requirement is also the priority in which it should be finished.
      *
-     * TODO: Change later back in Priority
+     * TODO: OPENENGSB-3250, Change later back in Priority
      */
     private String priority;
 
     /**
      * The type of the requirement (New feature, improvement, ...)
      *
-     * TODO: Change later back in Type
+     * TODO: OPENENGSB-3250, Change later back in Type
      */
     private String type;
 

@@ -40,7 +40,7 @@ public class ManUnits {
      * The unit of the man units since the workload of a requirement can be measured in
      * Hours, Days, Weeks, Months or even Years
      *
-     * TODO: change later back in TimeUnit
+     * TODO: OPENENGSB-3250, change later back in TimeUnit
      */
     private String timeUnit;
 
