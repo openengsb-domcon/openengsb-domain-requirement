@@ -19,10 +19,12 @@ package org.openengsb.domain.requirement;
 
 /**
  * The priority of a requirement can vary between very URGENT and only NICE_TO_HAVE
+ *
+ * TODO: change back to enum
  */
-public enum Priority {
-    URGENT,
-    REQUIRED,
-    OPTIONAL,
-    NICE_TO_HAVE
+public class Priority {
+    public static final String URGENT = "URGENT";
+    public static final String REQUIRED = "REQUIRED";
+    public static final String OPTIONAL = "OPTIONAL";
+    public static final String NICE_TO_HAVE = "NICE_TO_HAVE";
 }

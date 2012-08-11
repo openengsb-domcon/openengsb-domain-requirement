@@ -39,8 +39,10 @@ public class ManUnits {
     /**
      * The unit of the man units since the workload of a requirement can be measured in
      * Hours, Days, Weeks, Months or even Years
+     *
+     * TODO: change later back in TimeUnit
      */
-    private TimeUnit timeUnit;
+    private String timeUnit;
 
     /**
      * The actual value (number) which together with the unit tells about the workload -
@@ -60,11 +62,11 @@ public class ManUnits {
      * The unit of the man units since the workload of a requirement can be measured in
      * Hours, Days, Weeks, Months or even Years
      */
-    public TimeUnit getTimeUnit() {
+    public String getTimeUnit() {
         return timeUnit;
     }
 
-    public void setTimeUnit(TimeUnit timeUnit) {
+    public void setTimeUnit(String timeUnit) {
         this.timeUnit = timeUnit;
     }
 
