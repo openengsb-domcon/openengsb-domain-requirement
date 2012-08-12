@@ -48,7 +48,7 @@ public class ManUnits {
      * The actual value (number) which together with the unit tells about the workload -
      * 12 Man Months should be the same as 1 Man Year and yet there are more ways to define it (in Days or Weeks)
      */
-    private int timeValue;
+    private Integer timeValue;
 
     public String getId() {
         return id;
@@ -74,11 +74,11 @@ public class ManUnits {
      * The actual value (number) which together with the unit tells about the workload -
      * 12 Man Months should be the same as 1 Man Year and yet there are more ways to define it (in Days or Weeks)
      */
-    public int getTimeValue() {
+    public Integer getTimeValue() {
         return timeValue;
     }
 
-    public void setTimeValue(int timeValue) {
+    public void setTimeValue(Integer timeValue) {
         this.timeValue = timeValue;
     }
 }
