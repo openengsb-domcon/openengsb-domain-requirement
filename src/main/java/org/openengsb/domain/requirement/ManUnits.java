@@ -39,14 +39,16 @@ public class ManUnits {
     /**
      * The unit of the man units since the workload of a requirement can be measured in
      * Hours, Days, Weeks, Months or even Years
+     *
+     * TODO: OPENENGSB-3250, change later back in TimeUnit
      */
-    private TimeUnit timeUnit;
+    private String timeUnit;
 
     /**
      * The actual value (number) which together with the unit tells about the workload -
      * 12 Man Months should be the same as 1 Man Year and yet there are more ways to define it (in Days or Weeks)
      */
-    private int timeValue;
+    private Integer timeValue;
 
     public String getId() {
         return id;
@@ -60,11 +62,11 @@ public class ManUnits {
      * The unit of the man units since the workload of a requirement can be measured in
      * Hours, Days, Weeks, Months or even Years
      */
-    public TimeUnit getTimeUnit() {
+    public String getTimeUnit() {
         return timeUnit;
     }
 
-    public void setTimeUnit(TimeUnit timeUnit) {
+    public void setTimeUnit(String timeUnit) {
         this.timeUnit = timeUnit;
     }
 
@@ -72,11 +74,11 @@ public class ManUnits {
      * The actual value (number) which together with the unit tells about the workload -
      * 12 Man Months should be the same as 1 Man Year and yet there are more ways to define it (in Days or Weeks)
      */
-    public int getTimeValue() {
+    public Integer getTimeValue() {
         return timeValue;
     }
 
-    public void setTimeValue(int timeValue) {
+    public void setTimeValue(Integer timeValue) {
         this.timeValue = timeValue;
     }
 }
