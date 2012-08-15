@@ -17,13 +17,14 @@
 
 package org.openengsb.domain.requirement.events;
 
+import org.openengsb.core.api.Event;
 import org.openengsb.domain.requirement.Person;
 import org.openengsb.domain.requirement.Requirement;
 
 /**
  * To be raised when a requirement has been assigned to another person.
  */
-public class RequirementAssignedEvent {
+public class RequirementAssignedEvent extends Event {
     /**
      * The ide of the requirement which has changed.
      */

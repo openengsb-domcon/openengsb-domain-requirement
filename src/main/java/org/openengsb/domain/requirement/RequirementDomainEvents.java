@@ -57,6 +57,11 @@ public interface RequirementDomainEvents extends DomainEvents {
     void raiseSyncRequirementsEvent(SyncRequirementsEvent event);
 
     /**
+     * To be raised to retrieve a list of all changes of a requirement.
+     */
+    void raiseSyncRequirementHistoryEvent(SyncRequirementHistoryEvent event);
+
+    /**
      * To be raised when information about a new person have been entered
      */
     void raisePersonCreatedEvent(PersonCreatedEvent event);

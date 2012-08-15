@@ -32,11 +32,11 @@ public class RequirementCreatedEvent extends Event{
     public RequirementCreatedEvent() {
     }
 
-    public Requirement getComment() {
+    public Requirement getRequirement() {
         return requirement;
     }
 
-    public void setComment(Requirement requirement) {
+    public void setRequirement(Requirement requirement) {
         this.requirement = requirement;
     }
 }
