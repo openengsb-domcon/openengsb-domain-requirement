@@ -19,7 +19,6 @@ package org.openengsb.domain.requirement.events;
 
 import org.openengsb.core.api.Event;
 import org.openengsb.domain.requirement.Person;
-import org.openengsb.domain.requirement.Requirement;
 
 /**
  * To be raised when information about a new person have been entered
@@ -28,16 +27,16 @@ public class PersonCreatedEvent extends Event{
     /**
      * A newly created person
      */
-    private Person requirement;
+    private Person person;
 
     /**
      * A newly created person
      */
-    public Person getRequirement() {
-        return requirement;
+    public Person getPerson() {
+        return person;
     }
 
-    public void setRequirement(Person requirement) {
-        this.requirement = requirement;
+    public void setPerson(Person person) {
+        this.person = person;
     }
 }
