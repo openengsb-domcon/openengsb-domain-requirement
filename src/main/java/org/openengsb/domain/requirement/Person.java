@@ -44,7 +44,7 @@ public class Person {
     /**
      * The eMailAddress of the person
      */
-    private String EmailAddress;
+    private String emailAddress;
 
     public String getId() {
         return id;
@@ -80,10 +80,10 @@ public class Person {
      * The eMailAddress of the person
      */
     public String getEmailAddress() {
-        return EmailAddress;
+        return emailAddress;
     }
 
-    public void setEmailAddress(String eMailAddress) {
-        this.EmailAddress = eMailAddress;
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 }
