@@ -45,6 +45,15 @@ public class Person {
      * The eMailAddress of the person
      */
     private String emailAddress;
+    
+    public Person() {
+    }
+    
+    public Person(String name, String fullName, String emailAddress) {
+        this.name = name;
+        this.fullName = fullName;
+        this.emailAddress = emailAddress;
+    }
 
     public String getId() {
         return id;
